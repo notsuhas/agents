@@ -1,6 +1,6 @@
 {
   "name": "pstack",
-  "version": "0.15.21",
+  "version": "0.15.23",
   "description": "Upstream Cursor Pstack workflows, installed locally with Claude/Codex host notes.",
   "author": {
     "name": "Lauren Tan"
