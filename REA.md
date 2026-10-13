@@ -33,7 +33,15 @@ npx --yes rea-agents@6.4.0 setup \
   --dry-run --format json
 ```
 
-The plan can report a newer shared skill as stale because it compares against its own bundled version. Do not replace the shared skill solely to clear that warning. Verify registration, actual tools, and the requested operation separately. A dry-run or doctor result does not prove a live MCP connection.
+The plan can report a newer shared skill as stale because it compares against its own bundled version. An installed global CLI can also report the versioned npm launcher as stale because it expects its own executable path. Do not replace the shared setup solely to clear those warnings. Verify the configured command, actual tools, and the requested operation separately. A dry-run or doctor result does not prove a live MCP connection.
+
+Check the shared launcher directly:
+
+```sh
+skillshare mcp check rea --live --accept-tools --timeout 15s --json
+```
+
+This starts the configured MCP and checks discovery. It does not prove that a particular analysis engine or agent session is connected.
 
 ## Add analysis engines only when needed
 
