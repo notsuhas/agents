@@ -26,7 +26,7 @@ GitHub Actions checks upstream packages daily at 08:47 IST (03:17 UTC), or on ma
 
 ## Shared MCP definitions
 
-`mcp.yaml` distributes Upsy, Argent, REA, and ipatool definitions to Claude, Codex, and OpenCode. OAuth credentials remain on each machine; sharing this file does not copy a login. See [REA.md](REA.md) for REA and ipatool setup, optional engines, and update ownership.
+`mcp.yaml` distributes Upsy, Argent, REA, ipatool, and Firebase definitions to Claude, Codex, and OpenCode. OAuth credentials remain on each machine; sharing this file does not copy a login. See [REA.md](REA.md) for REA and ipatool setup, optional engines, and update ownership.
 
 Bifrost's endpoint is catalogued with `targets: []`, so existing native connections remain untouched. Its Authorization header refers to `BIFROST_AUTHORIZATION`; set this in each agent's environment and test access before enabling managed delivery. No gateway token belongs in this public repository.
 
