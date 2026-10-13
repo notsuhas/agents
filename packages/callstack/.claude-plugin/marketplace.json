@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "callstack-agent-skills",
+  "version": "1.2.0",
+  "description": "React Native development plugins from Callstack.",
+  "owner": {
+    "name": "Callstack",
+    "email": "hello@callstack.com",
+    "url": "https://www.callstack.com/"
+  },
+  "plugins": [
+    {
+      "name": "building-react-native-apps",
+      "description": "React Native skills for performance, navigation, TV, library development, and upgrades.",
+      "source": "./plugins/building-react-native-apps",
+      "category": "development",
+      "tags": ["react-native", "performance", "navigation", "mobile"]
+    },
+    {
+      "name": "testing-react-native-apps",
+      "description": "React Native testing support spanning CI artifacts, test authoring, device automation, and QA workflows.",
+      "source": "./plugins/testing-react-native-apps",
+      "category": "development",
+      "tags": ["react-native", "testing", "qa", "automation", "github-actions", "ci"]
+    },
+    {
+      "name": "migrating-to-react-native",
+      "description": "Skills for assessing and incrementally migrating native iOS and Android apps to React Native.",
+      "source": "./plugins/migrating-to-react-native",
+      "category": "development",
+      "tags": ["react-native", "migration", "brownfield", "mobile"]
+    }
+  ]
+}

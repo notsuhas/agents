@@ -1,1 +1,26 @@
-servers: {}
+servers:
+  argent:
+    transport: stdio
+    command: argent
+    args:
+      - mcp
+    env:
+      DO_NOT_TRACK: '1'
+    targets:
+      - claude
+      - codex
+      - opencode
+  upsy:
+    transport: streamable-http
+    url: https://upsy.ai/connect
+    targets:
+      - claude
+      - codex
+      - opencode
+  bifrost:
+    transport: streamable-http
+    url: https://mcp.notsuhas.dev/mcp
+    headers:
+      Authorization:
+        fromEnv: BIFROST_AUTHORIZATION
+    targets: []

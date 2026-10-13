@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: notsuhas/agent-backbone
-          ref: v0.5.1
+          ref: main
           path: .backbone-tool
           persist-credentials: false
       - uses: actions/setup-node@v4
@@ -38,8 +38,11 @@ jobs:
       - name: Update declared upstream packages
         run: |
           printf '%s\n' '.backbone-tool/' >> .git/info/exclude
+          printf '%s\n' '.update-summary.md' >> .git/info/exclude
           .backbone-tool/bin/agent-backbone upstream update --all --repository .
           .backbone-tool/bin/agent-backbone validate --repository .
+          node scripts/update-runtimes.mjs
+          node scripts/update-summary.mjs
       - name: Open or refresh update PR
         uses: peter-evans/create-pull-request@v7
         with:
@@ -47,13 +50,11 @@ jobs:
           delete-branch: true
           sign-commits: true
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-          commit-message: 'chore(skills): update upstream packages'
-          title: 'chore(skills): update upstream packages'
-          body: |
-            Updates declared upstream packages and their pinned revisions. Local host adapters are preserved.
-
-            Package paths, links and skill metadata passed validation. Review changed instructions and test affected skills before merging. Machines refresh after merge; disabled skills remain disabled.
+          commit-message: 'chore(agents): update skills and runtime versions'
+          title: 'chore(agents): update skills and runtime versions'
+          body-path: .update-summary.md
           add-paths: |
             backbone.json
             packages/
             skills/
+            runtimes.json

@@ -24,15 +24,98 @@
     {
       "name": "human-writing",
       "path": "packages/human-writing"
+    },
+    {
+      "name": "expo",
+      "path": "packages/expo",
+      "upstream": {
+        "repository": "https://github.com/expo/skills.git",
+        "path": "plugins/expo",
+        "ref": "main",
+        "approved_tree": "9738f5efe58d25149253021a1301c918ec2c0b83",
+        "approved_commit": "d4f484024fec15196bfd3c272e953e3f983972cf"
+      }
+    },
+    {
+      "name": "callstack",
+      "path": "packages/callstack",
+      "upstream": {
+        "repository": "https://github.com/callstackincubator/agent-skills.git",
+        "path": ".",
+        "ref": "main",
+        "approved_tree": "c146661d770f57c564f9381c195cc65210c92c1c",
+        "approved_commit": "59e9d17446a248b21d86f078fcd0bd2d36db1ca4"
+      }
+    },
+    {
+      "name": "ponytail",
+      "path": "packages/ponytail",
+      "upstream": {
+        "repository": "https://github.com/DietrichGebert/ponytail.git",
+        "path": ".",
+        "ref": "main",
+        "approved_tree": "ce7bdb1a8ff7666d8040f34a673598b823fc32ef",
+        "approved_commit": "2961b52fc1fe6a5a87c7a959a79512e5c2f3ffe5"
+      }
+    },
+    {
+      "name": "vercel",
+      "path": "packages/vercel",
+      "upstream": {
+        "repository": "https://github.com/vercel-labs/agent-skills.git",
+        "path": ".",
+        "ref": "main",
+        "approved_tree": "f94978e8351f77b2d84911fac5d3dd9d51408af9",
+        "approved_commit": "063bee94c3f4df8453406c830b0a7df0f2860278"
+      },
+      "skill_naming": "frontmatter"
+    },
+    {
+      "name": "emil",
+      "path": "packages/emil",
+      "upstream": {
+        "repository": "https://github.com/emilkowalski/skills.git",
+        "path": ".",
+        "ref": "main",
+        "approved_tree": "a8f01f03c19a9ec7e737494dff7b8e416e326bd2",
+        "approved_commit": "2d228630ba1446365f614a108cb8252f1feda202"
+      }
+    },
+    {
+      "name": "swiftui",
+      "path": "packages/swiftui",
+      "upstream": {
+        "repository": "https://github.com/AvdLee/SwiftUI-Agent-Skill.git",
+        "path": ".",
+        "ref": "main",
+        "approved_tree": "fdc2229ba96b2883d0967f9d39367511c3d078c4",
+        "approved_commit": "204dba7c67256a8b707ee3fbc5759a824191974f"
+      }
+    },
+    {
+      "name": "callstack-testing",
+      "path": "packages/callstack-testing",
+      "local_files": [
+        "LICENSE"
+      ],
+      "upstream": {
+        "repository": "https://github.com/callstackincubator/agent-skills.git",
+        "path": "plugins/vendored",
+        "ref": "main",
+        "approved_commit": "59e9d17446a248b21d86f078fcd0bd2d36db1ca4",
+        "approved_tree": "1606a7bf8b3bf8711c12f1f5bba2bf7bbea443a9"
+      }
     }
   ],
   "instructions": [
     {
-      "path": "instructions/global.md",
+      "path": "instructions/AGENTS.md",
       "agents": [
         "claude",
-        "codex"
-      ]
+        "codex",
+        "opencode"
+      ],
+      "mode": "symlink"
     }
   ]
 }

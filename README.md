@@ -18,8 +18,18 @@ Other CLI-installed skills remain owned by their installers until deliberately a
 
 Cloud exports, credentials and company-specific material are excluded from this public repository. Package licenses remain in their respective directories.
 
-`instructions/global.md` contains shared portable instructions. Skillshare single-file extras append managed blocks in each agent’s instruction file, preserving local content and existing dotfiles symlinks. The Backbone adapter supplies package access policy and automatic refresh.
+`instructions/AGENTS.md` is the one shared global instruction file. Skillshare links Claude’s `~/.claude/CLAUDE.md`, Codex’s `~/.codex/AGENTS.md`, and OpenCode’s `~/.config/opencode/AGENTS.md` to it. There are no appended blocks or per-agent copies. Existing target files are preserved in Skillshare’s migration backups. Project instructions remain project-specific.
 
 GitHub Actions checks upstream packages daily at 08:47 IST (03:17 UTC), or on manual dispatch. It opens or refreshes one update PR only when a package tree changes. Merge after review and runtime testing; machines then refresh automatically. Skills without an upstream declaration stay locally maintained. Enable “Allow GitHub Actions to create and approve pull requests” in this repository's Actions settings; the workflow does not approve or merge PRs. Public-repository schedules may be disabled after 60 days of inactivity and can run late.
 
 `mcp.yaml` is the shared MCP definition file. Add portable endpoints and environment references through `skillshare mcp` or `skillshare ui`. Keep token values and OAuth stores on each machine. Review and publish changes to this file before expecting other machines to receive them. Shared custom agents can go in `agents/`; shared extras can go in `extras/`.
+
+## Shared MCP definitions
+
+`mcp.yaml` distributes Upsy's endpoint to Claude and Codex. OAuth credentials remain on each machine; sharing this file does not copy a login.
+
+Bifrost's endpoint is catalogued with `targets: []`, so existing native connections remain untouched. Its Authorization header refers to `BIFROST_AUTHORIZATION`; set this in each agent's environment and test access before enabling managed delivery. No gateway token belongs in this public repository.
+
+Skillshare installs change the local library checkout. Review, commit and push those changes to share them with other machines. Newly installed skills need upstream tracking before the daily package updater maintains them.
+
+See [ROSTER.md](ROSTER.md) for installed bundles, exclusions, and CLI ownership. [HOOKS.md](HOOKS.md) records hook ownership. `runtimes.json` approves Argent’s CLI version; its installer owns its skills. Daily updates include runtime version changes in the same combined PR.
