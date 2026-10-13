@@ -1,4 +1,15 @@
 servers:
+  rea:
+    transport: stdio
+    command: npx
+    args:
+      - --yes
+      - rea-agents@6.4.0
+      - mcp
+    targets:
+      - claude
+      - codex
+      - opencode
   argent:
     transport: stdio
     command: argent

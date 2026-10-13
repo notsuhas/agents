@@ -2,9 +2,9 @@
 
 Imported on 2026-10-14. Machines need Agent Backbone v0.6.0 or later to apply the runtime policy and unified instruction links.
 
-## Shared bundles: 120 skills
+## Shared bundles: 122 skills
 
-- Pstack: 52. Kept intact, including HOST.md and local Claude adapter.
+- Pstack: 53. Kept intact, including HOST.md and local Claude adapter.
 - Human writing: 1. Personal shared skill.
 - [Expo](https://github.com/expo/skills): 24 production skills, including EAS, UI, animation, routing, modules, and feedback. Full folders, references, scripts, agents, and assets retained. Importing the skills does not activate Expo's plugin hooks or install its MCP. Telemetry stays opt-in.
 - [Callstack](https://github.com/callstackincubator/agent-skills): 9 maintained React Native skills plus 3 skills vendored by its testing bundle: agent-device, dogfood, and react-native-testing. Preserve the testing bundle's source lockfile when updating it. In T3 use its native device panel and supplied launcher for device work.
@@ -12,6 +12,8 @@ Imported on 2026-10-14. Machines need Agent Backbone v0.6.0 or later to apply th
 - [Vercel](https://github.com/vercel-labs/agent-skills): all 9 skills. MIT is declared in the upstream README. Names from skill frontmatter are used for shared links where folder names differ, preserving the upstream instructions.
 - [Emil Kowalski](https://github.com/emilkowalski/skills): all 15 design/animation/mobile/Swift skills, including apple-design and write-swift.
 - [SwiftUI Expert](https://github.com/AvdLee/SwiftUI-Agent-Skill): 1 skill with all references. Covers modern SwiftUI, composition, state, performance, and Liquid Glass.
+
+- [Reverse Engineer Anything](https://github.com/morluto/rea): 1 shared skill with all 6 reference guides, MIT license, and upstream revision tracking. Existing local copies are adopted into Backbone delivery. The REA CLI remains separately installed; skill updates do not install or update analysis engines. Follow the connected server's actual schemas when a newer skill describes tools absent from the installed CLI.
 
 No production skill was removed from these bundles. All upstream sources are tracked in backbone.json with source paths and approved revisions. Upstream instructions remain unchanged; host and user instructions take precedence.
 
