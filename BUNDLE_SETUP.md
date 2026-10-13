@@ -15,3 +15,5 @@ Matt's original source is https://github.com/mattpocock/skills. Backbone adds th
 User and host instructions take precedence over workflow instructions, including commit/push approvals and tool routing. Setup skills must not replace the shared global instructions or install a second owner for shared skills.
 
 The source folders include licenses, references, and supporting files. Importing them does not activate native plugin hooks, commands, agents, or MCP registrations. Existing Codex plugins remain installed.
+
+Matt uses a shared stable-skill allowlist. Existing approved skills keep updating; new Matt skill names stay hidden until reviewed and explicitly allowed.

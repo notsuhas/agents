@@ -58,3 +58,5 @@ Licenses and attribution are retained. No credentials or private account context
 See AUDIT.md for the local Codex bundles and cloud exports that are not shared. A locally available plugin is not proof of cross-machine or cross-agent delivery.
 
 See BUNDLE_SETUP.md for prerequisites and ownership rules for these additions.
+
+Matt uses a shared stable-skill allowlist. Existing approved skills keep updating; new Matt skill names stay hidden until reviewed and explicitly allowed.
