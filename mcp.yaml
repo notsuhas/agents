@@ -1,4 +1,13 @@
 servers:
+  ipatool:
+    transport: stdio
+    command: ipatool
+    args:
+      - mcp
+    targets:
+      - claude
+      - codex
+      - opencode
   rea:
     transport: stdio
     command: npx

@@ -51,6 +51,32 @@ Follow [REA's provider setup guide](https://github.com/morluto/rea/blob/main/doc
 
 Existing native REA registrations can use different commands or provider settings. Review MCP sync's proposed changes before replacing them, and retain the required local settings.
 
+## Get App Store packages with ipatool
+
+[ipatool](https://github.com/majd/ipatool) searches the App Store and downloads IPA or macOS PKG packages. REA inspects the downloaded artifact; ipatool is not a decompiler.
+
+Install ipatool on each machine:
+
+```sh
+brew install ipatool
+ipatool --version
+ipatool auth login
+```
+
+Use ipatool 2.7.0 or newer for MCP support. If an older version is installed, run `brew upgrade ipatool`. Enter the Apple Account credentials and requested 2FA code at the terminal prompts. The account must already be configured for the App Store. Do not pass passwords in command arguments or put account credentials in Git.
+
+Backbone shares `ipatool mcp` with Claude, Codex, and OpenCode through `mcp.yaml`. After installing and logging in, run `agent-backbone sync`, then restart the agents. The MCP uses the machine's existing ipatool login; it does not expose login tools. Backbone does not install the Homebrew package automatically.
+
+Check discovery without downloading or acquiring any app:
+
+```sh
+skillshare mcp check ipatool --live --accept-tools --timeout 15s --json
+```
+
+The server exposes six tools for search, download, version lookup, purchase history, and acquiring free app licenses. Discovery does not verify App Store authentication or a successful download. Downloads and license acquisition happen only for a requested app. Give REA the downloaded package's explicit path; the available analysis depends on that artifact and the installed providers.
+
+Update ipatool with Homebrew separately from shared skill updates. Its login is not copied between machines.
+
 ## Approve updates
 
 Daily CI checks the REA skill's declared upstream path and includes changes in the combined update PR. REA's MCP runtime stays at the version in `mcp.yaml`; it is not currently managed by the Argent-only runtime updater. To upgrade the REA runtime, change that version deliberately, verify discovery and a relevant operation, and publish the reviewed change.
