@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "skills_dir": "skills",
+  "packages": [
+    {
+      "name": "pstack",
+      "path": "packages/pstack",
+      "claude_plugin": true,
+      "host_notes": "HOST.md",
+      "local_files": [
+        "HOST.md",
+        ".claude-plugin/plugin.json",
+        "PROVENANCE.json"
+      ],
+      "upstream": {
+        "repository": "https://github.com/cursor/plugins.git",
+        "path": "pstack",
+        "ref": "main",
+        "approved_tree": "8824c764d99583f7cc8059c915296e444c53f060",
+        "approved_commit": "1dcc2bacde73ddd284803b7af28164d0436198fc"
+      },
+      "provenance_file": "PROVENANCE.json"
+    }
+  ],
+  "instructions": [
+    {
+      "path": "instructions/global.md",
+      "agents": [
+        "claude",
+        "codex"
+      ]
+    }
+  ]
+}
