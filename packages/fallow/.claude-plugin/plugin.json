@@ -1,0 +1,22 @@
+{
+  "name": "fallow",
+  "displayName": "Fallow Code Analysis",
+  "version": "1.4.18",
+  "description": "Local-first codebase intelligence and Impact summaries for TypeScript and JavaScript using fallow",
+  "author": {
+    "name": "Bart Waardenburg",
+    "email": "bart@fallow.tools"
+  },
+  "homepage": "https://fallow.tools",
+  "repository": "https://github.com/fallow-rs/fallow-skills",
+  "license": "MIT",
+  "keywords": [
+    "fallow",
+    "dead-code",
+    "duplication",
+    "complexity",
+    "static-analysis",
+    "javascript",
+    "typescript"
+  ]
+}

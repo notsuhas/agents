@@ -1,0 +1,56 @@
+{
+  "name": "fallow",
+  "version": "1.4.18",
+  "description": "Local-first codebase intelligence for TypeScript and JavaScript using fallow",
+  "author": {
+    "name": "Bart Waardenburg",
+    "email": "bart@fallow.tools",
+    "url": "https://github.com/fallow-rs"
+  },
+  "homepage": "https://fallow.tools",
+  "repository": "https://github.com/fallow-rs/fallow-skills",
+  "license": "MIT",
+  "keywords": [
+    "fallow",
+    "dead-code",
+    "duplication",
+    "complexity",
+    "static-analysis",
+    "javascript",
+    "typescript"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./codex-app/mcp.json",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/fallow-codex-onboarding/SKILL.md"
+    }
+  },
+  "interface": {
+    "displayName": "Fallow Code Analysis",
+    "shortDescription": "JS and TS code health",
+    "longDescription": "Fallow gives Codex fast, local code health for TypeScript and JavaScript. Open the Fallow dashboard from the sidebar or beside a thread to see the health score, dead code, unused dependencies, duplication, complexity hotspots and architecture problems. Select findings to attach them to the composer, mention a finding with @Fallow, or let Codex fix them after it verifies each one. Audit a branch before a commit, plan a cleanup in a form, edit .fallowrc.json with rule controls and an impact preview, and browse any .sarif report. The skills also set up or modernize the quality stack of a project: keep the formatter and linter it already uses, write a Fallow config, add a code-health gate to CI, and make the repository agent-ready. Analysis runs locally with the fallow CLI. Optional cloud and product telemetry workflows run only after explicit user action.",
+    "developerName": "Bart Waardenburg",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Static analysis",
+      "Code review",
+      "Local workflow",
+      "Project setup",
+      "Impact summaries"
+    ],
+    "websiteURL": "https://fallow.tools/plugins?utm_source=openai&utm_medium=plugin-directory",
+    "supportURL": "https://github.com/fallow-rs/fallow/issues",
+    "privacyPolicyURL": "https://fallow.tools/privacy",
+    "termsOfServiceURL": "https://fallow.tools/terms",
+    "defaultPrompt": [
+      "Show the code health of this project.",
+      "Audit this branch before I commit.",
+      "Set up code quality tooling for this TypeScript project."
+    ],
+    "brandColor": "#1C1B1C",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}

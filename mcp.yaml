@@ -1,4 +1,12 @@
 servers:
+  1password:
+    transport: stdio
+    command: 1password-mcp
+    args: []
+    targets:
+      - claude
+      - codex
+      - opencode
   firebase:
     transport: stdio
     command: npx

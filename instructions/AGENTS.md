@@ -130,3 +130,9 @@ for Claude/Codex tool and model compatibility. Upstream sources live in
 `~/.agents/packages/pstack`. Preserve the current user and host instructions.
 
 Respect disabled skills and per-agent exclusions. Do not invoke them through source caches or sibling references.
+
+# Shared bundle ownership
+
+Matt Pocock workflows use `matt-` skill names. Within a Matt workflow, resolve sibling skill references to the corresponding `matt-` skill, respecting disabled skills.
+
+Do not let package setup commands overwrite Backbone-managed global instructions or skill links. Inspect project installer plans before adding their hooks or task maps.

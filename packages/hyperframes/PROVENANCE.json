@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/heygen-com/hyperframes.git",
+  "commit": "bf4cf860fbd26a7d51938c5f11987c335d4e848a",
+  "upstream_tree": "a2b19b70f209d512348a60349776e8a6ce823ab7",
+  "note": "Full selected upstream directory and license retained. Skill aliases are managed by Backbone; CLI installs, account enrollment, and optional hooks are separate."
+}

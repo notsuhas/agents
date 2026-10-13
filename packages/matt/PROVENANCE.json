@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/mattpocock/skills.git",
+  "commit": "49dd158d1076134a641b33efb035946536778336",
+  "upstream_tree": "3ce485319972aae46dec0c2ac34cf4a7f28f7414",
+  "note": "Original Matt Pocock source. All skill folders retained, including upstream in-progress workflows. Backbone prefixes delivery names without changing upstream files."
+}

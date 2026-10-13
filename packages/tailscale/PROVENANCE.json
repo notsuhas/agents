@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/tailscale/tailscale-skill.git",
+  "commit": "4f05d353efc56962546aa26ccc59bb08ca699ad1",
+  "upstream_tree": "abe3aa9e880afef14cf5e8e331f984ca27a0a075",
+  "note": "Full selected upstream directory and license retained. Skill aliases are managed by Backbone; CLI installs, account enrollment, and optional hooks are separate."
+}

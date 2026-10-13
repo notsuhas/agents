@@ -167,6 +167,85 @@
         "approved_tree": "b150c7ad29479b9431f9028a281f5667ea3a673a",
         "approved_commit": "0722921d5542fc593105c27bd52630babd8b8c2a"
       }
+    },
+    {
+      "name": "fallow",
+      "path": "packages/fallow",
+      "local_files": [
+        "PROVENANCE.json",
+        "LICENSE"
+      ],
+      "provenance_file": "PROVENANCE.json",
+      "upstream": {
+        "repository": "https://github.com/fallow-rs/fallow-skills.git",
+        "path": "fallow",
+        "ref": "main",
+        "approved_tree": "d327e428dfec12a1c95b66d297146340ece62cd9",
+        "approved_commit": "5d0fd7cf37cedd0c8b18df5c7b0cabd68b462708"
+      }
+    },
+    {
+      "name": "hyperframes",
+      "path": "packages/hyperframes",
+      "local_files": [
+        "PROVENANCE.json",
+        "LICENSE"
+      ],
+      "provenance_file": "PROVENANCE.json",
+      "upstream": {
+        "repository": "https://github.com/heygen-com/hyperframes.git",
+        "path": "skills",
+        "ref": "main",
+        "approved_tree": "a2b19b70f209d512348a60349776e8a6ce823ab7",
+        "approved_commit": "bf4cf860fbd26a7d51938c5f11987c335d4e848a"
+      }
+    },
+    {
+      "name": "tailscale",
+      "path": "packages/tailscale",
+      "local_files": [
+        "PROVENANCE.json"
+      ],
+      "provenance_file": "PROVENANCE.json",
+      "upstream": {
+        "repository": "https://github.com/tailscale/tailscale-skill.git",
+        "path": ".",
+        "ref": "main",
+        "approved_tree": "abe3aa9e880afef14cf5e8e331f984ca27a0a075",
+        "approved_commit": "4f05d353efc56962546aa26ccc59bb08ca699ad1"
+      }
+    },
+    {
+      "name": "1password",
+      "path": "packages/1password",
+      "local_files": [
+        "PROVENANCE.json",
+        "LICENSE"
+      ],
+      "provenance_file": "PROVENANCE.json",
+      "upstream": {
+        "repository": "https://github.com/1Password/1password-codex-plugin.git",
+        "path": "plugins/1password",
+        "ref": "main",
+        "approved_tree": "54474a80cd92b27242be9c2dec29b6644ee53158",
+        "approved_commit": "7312d488d76b0df22e98e8947b6040f481138e44"
+      }
+    },
+    {
+      "name": "matt",
+      "path": "packages/matt",
+      "local_files": [
+        "PROVENANCE.json"
+      ],
+      "provenance_file": "PROVENANCE.json",
+      "upstream": {
+        "repository": "https://github.com/mattpocock/skills.git",
+        "path": ".",
+        "ref": "main",
+        "approved_tree": "3ce485319972aae46dec0c2ac34cf4a7f28f7414",
+        "approved_commit": "49dd158d1076134a641b33efb035946536778336"
+      },
+      "skill_prefix": "matt"
     }
   ],
   "instructions": [

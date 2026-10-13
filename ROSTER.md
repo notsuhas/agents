@@ -1,8 +1,8 @@
 # Shared skill roster
 
-Imported on 2026-10-14. Machines need Agent Backbone v0.6.0 or later to apply the runtime policy and unified instruction links.
+Imported on 2026-10-14. Machines need Agent Backbone v0.7.0 or later to apply the runtime policy and unified instruction links.
 
-## Shared bundles: 146 skills
+## Shared bundles: 211 skills
 
 - Pstack: 53. Kept intact, including HOST.md and local Claude adapter.
 - Human writing: 1. Personal shared skill.
@@ -16,6 +16,12 @@ Imported on 2026-10-14. Machines need Agent Backbone v0.6.0 or later to apply th
 - [Reverse Engineer Anything](https://github.com/morluto/rea): 1 shared skill with all 6 reference guides, MIT license, and upstream revision tracking. Existing local copies are adopted into Backbone delivery. The REA CLI remains separately installed; skill updates do not install or update analysis engines. Follow the connected server's actual schemas when a newer skill describes tools absent from the installed CLI.
 - [Firebase](https://github.com/firebase/agent-skills): 13 skills, including the newly added firestore-rules-creation skill absent from the local Codex plugin snapshot. Full package and Apache-2.0 license retained. Firebase MCP is shared; authentication and project selection remain local.
 - [Build macOS Apps](https://github.com/openai/plugins/tree/main/plugins/build-macos-apps): 11 skills for SwiftUI/AppKit, build/run/debug, tests, signing, packaging, windows, and telemetry. Upstream metadata declares MIT. Codex-specific Run button and command metadata are retained but are not installed into other agents.
+
+- [Fallow](https://github.com/fallow-rs/fallow-skills): 4 skills for code analysis, review, setup, and Codex onboarding. CLI installation and project gates remain separate.
+- [HyperFrames](https://github.com/heygen-com/hyperframes): 21 current video and rendering skills, with references retained. Requires Node 22+; rendering needs FFmpeg.
+- [Tailscale](https://github.com/tailscale/tailscale-skill): 1 official networking skill. Machine enrollment stays local.
+- [1Password](https://github.com/1Password/1password-codex-plugin): 1 Developer Environments skill. Requires the desktop app's local MCP server and client approval.
+- [Matt Pocock](https://github.com/mattpocock/skills): 38 original skills, including seven upstream beta workflows. All use matt- names in delivery to avoid collisions; upstream files stay unchanged. The third-party curated fork is not shared.
 
 No production skill was removed from these bundles. All upstream sources are tracked in backbone.json with source paths and approved revisions. Upstream instructions remain unchanged; host and user instructions take precedence.
 
@@ -50,3 +56,5 @@ Daily updates accumulate on automation/upstream-skills until its combined PR is 
 Licenses and attribution are retained. No credentials or private account context belongs in this public repository. See HOOKS.md for installer-owned integrations.
 
 See AUDIT.md for the local Codex bundles and cloud exports that are not shared. A locally available plugin is not proof of cross-machine or cross-agent delivery.
+
+See BUNDLE_SETUP.md for prerequisites and ownership rules for these additions.

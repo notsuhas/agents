@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/fallow-rs/fallow-skills.git",
+  "commit": "5d0fd7cf37cedd0c8b18df5c7b0cabd68b462708",
+  "upstream_tree": "d327e428dfec12a1c95b66d297146340ece62cd9",
+  "note": "Full selected upstream directory and license retained. Skill aliases are managed by Backbone; CLI installs, account enrollment, and optional hooks are separate."
+}

@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/1Password/1password-codex-plugin.git",
+  "commit": "7312d488d76b0df22e98e8947b6040f481138e44",
+  "upstream_tree": "54474a80cd92b27242be9c2dec29b6644ee53158",
+  "note": "Full selected upstream directory and license retained. Skill aliases are managed by Backbone; CLI installs, account enrollment, and optional hooks are separate."
+}
