@@ -137,6 +137,36 @@
         "approved_tree": "ee926743631c43d6cf2c240c3eec2fe6e16942af",
         "approved_commit": "9630c8ff46533fe63ec0e06212d01545070d17f0"
       }
+    },
+    {
+      "name": "firebase",
+      "path": "packages/firebase",
+      "local_files": [
+        "PROVENANCE.json"
+      ],
+      "provenance_file": "PROVENANCE.json",
+      "upstream": {
+        "repository": "https://github.com/firebase/agent-skills.git",
+        "path": ".",
+        "ref": "main",
+        "approved_tree": "f45154b671392a89eab02e9d8a1451a6c088c1bc",
+        "approved_commit": "b5735e5baa0d874cb97a23e26ebe93e4501797b9"
+      }
+    },
+    {
+      "name": "build-macos-apps",
+      "path": "packages/build-macos-apps",
+      "local_files": [
+        "PROVENANCE.json"
+      ],
+      "provenance_file": "PROVENANCE.json",
+      "upstream": {
+        "repository": "https://github.com/openai/plugins.git",
+        "path": "plugins/build-macos-apps",
+        "ref": "main",
+        "approved_tree": "b150c7ad29479b9431f9028a281f5667ea3a673a",
+        "approved_commit": "0722921d5542fc593105c27bd52630babd8b8c2a"
+      }
     }
   ],
   "instructions": [

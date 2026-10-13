@@ -33,3 +33,5 @@ Bifrost's endpoint is catalogued with `targets: []`, so existing native connecti
 Skillshare installs change the local library checkout. Review, commit and push those changes to share them with other machines. Newly installed skills need upstream tracking before the daily package updater maintains them.
 
 See [ROSTER.md](ROSTER.md) for installed bundles, exclusions, and CLI ownership. [HOOKS.md](HOOKS.md) records hook ownership. `runtimes.json` approves Argent’s CLI version; its installer owns its skills. Daily updates include runtime version changes in the same combined PR.
+
+See [AUDIT.md](AUDIT.md) for shared-versus-local coverage and outstanding gaps, and [FIREBASE.md](FIREBASE.md) for Firebase login and MCP setup. macOS app skills are shared, but Xcode and signing identities are machine-local prerequisites.

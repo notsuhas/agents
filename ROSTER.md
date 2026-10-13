@@ -2,7 +2,7 @@
 
 Imported on 2026-10-14. Machines need Agent Backbone v0.6.0 or later to apply the runtime policy and unified instruction links.
 
-## Shared bundles: 122 skills
+## Shared bundles: 146 skills
 
 - Pstack: 53. Kept intact, including HOST.md and local Claude adapter.
 - Human writing: 1. Personal shared skill.
@@ -14,6 +14,8 @@ Imported on 2026-10-14. Machines need Agent Backbone v0.6.0 or later to apply th
 - [SwiftUI Expert](https://github.com/AvdLee/SwiftUI-Agent-Skill): 1 skill with all references. Covers modern SwiftUI, composition, state, performance, and Liquid Glass.
 
 - [Reverse Engineer Anything](https://github.com/morluto/rea): 1 shared skill with all 6 reference guides, MIT license, and upstream revision tracking. Existing local copies are adopted into Backbone delivery. The REA CLI remains separately installed; skill updates do not install or update analysis engines. Follow the connected server's actual schemas when a newer skill describes tools absent from the installed CLI.
+- [Firebase](https://github.com/firebase/agent-skills): 13 skills, including the newly added firestore-rules-creation skill absent from the local Codex plugin snapshot. Full package and Apache-2.0 license retained. Firebase MCP is shared; authentication and project selection remain local.
+- [Build macOS Apps](https://github.com/openai/plugins/tree/main/plugins/build-macos-apps): 11 skills for SwiftUI/AppKit, build/run/debug, tests, signing, packaging, windows, and telemetry. Upstream metadata declares MIT. Codex-specific Run button and command metadata are retained but are not installed into other agents.
 
 No production skill was removed from these bundles. All upstream sources are tracked in backbone.json with source paths and approved revisions. Upstream instructions remain unchanged; host and user instructions take precedence.
 
@@ -46,3 +48,5 @@ Open the Skillshare dashboard or run skillshare list. Use agent-backbone enable 
 Daily updates accumulate on automation/upstream-skills until its combined PR is merged. Machines pull approved changes on refresh. Dirty or divergent checkouts pause automatic Git refresh and retain cached delivery. Review instruction changes before merge.
 
 Licenses and attribution are retained. No credentials or private account context belongs in this public repository. See HOOKS.md for installer-owned integrations.
+
+See AUDIT.md for the local Codex bundles and cloud exports that are not shared. A locally available plugin is not proof of cross-machine or cross-agent delivery.

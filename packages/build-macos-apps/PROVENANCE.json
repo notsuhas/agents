@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/openai/plugins.git",
+  "commit": "0722921d5542fc593105c27bd52630babd8b8c2a",
+  "upstream_tree": "b150c7ad29479b9431f9028a281f5667ea3a673a",
+  "license": "MIT",
+  "license_declaration": ".codex-plugin/plugin.json",
+  "note": "Full upstream package retained. Native plugin registration, commands, hooks, and Codex UI metadata are not activated by shared skill delivery."
+}
