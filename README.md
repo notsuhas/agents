@@ -16,3 +16,5 @@ Other CLI-installed skills remain owned by their installers until deliberately a
 Cloud exports, credentials and company-specific material are excluded from this public repository. Package licenses remain in their respective directories.
 
 `instructions/global.md` contains shared portable instructions. Agent Backbone updates only its marked block in each agent’s instruction file, preserving local content and existing dotfiles symlinks.
+
+GitHub Actions checks upstream packages daily at 08:47 IST (03:17 UTC), or on manual dispatch. It opens or refreshes one update PR only when a package tree changes. Merge after review and runtime testing; machines then refresh automatically. Skills without an upstream declaration stay locally maintained. Enable “Allow GitHub Actions to create and approve pull requests” in this repository's Actions settings; the workflow does not approve or merge PRs. Public-repository schedules may be disabled after 60 days of inactivity and can run late.

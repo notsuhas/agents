@@ -1,0 +1,59 @@
+name: Update upstream skills
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-upstream-skills
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: notsuhas/agent-backbone
+          ref: v0.2.0
+          path: .backbone-tool
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Build updater
+        working-directory: .backbone-tool
+        run: |
+          npm ci --ignore-scripts
+          npm run build
+      - name: Update declared upstream packages
+        run: |
+          printf '%s\n' '.backbone-tool/' >> .git/info/exclude
+          .backbone-tool/bin/agent-backbone upstream update --all --repository .
+          .backbone-tool/bin/agent-backbone validate --repository .
+      - name: Open or refresh update PR
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          branch: automation/upstream-skills
+          delete-branch: true
+          sign-commits: true
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          commit-message: 'chore(skills): update upstream packages'
+          title: 'chore(skills): update upstream packages'
+          body: |
+            Updates declared upstream packages and their pinned revisions. Local host adapters are preserved.
+
+            Package paths, links and skill metadata passed validation. Review changed instructions and test affected skills before merging. Machines refresh after merge; disabled skills remain disabled.
+          add-paths: |
+            backbone.json
+            packages/
+            skills/
