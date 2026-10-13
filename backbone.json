@@ -12,22 +12,26 @@
         ".claude-plugin/plugin.json",
         "PROVENANCE.json"
       ],
+      "provenance_file": "PROVENANCE.json",
       "upstream": {
         "repository": "https://github.com/cursor/plugins.git",
         "path": "pstack",
         "ref": "main",
-        "approved_tree": "8824c764d99583f7cc8059c915296e444c53f060",
-        "approved_commit": "1dcc2bacde73ddd284803b7af28164d0436198fc"
-      },
-      "provenance_file": "PROVENANCE.json"
+        "approved_tree": "fafe54a3bb94d4e5e6eee5070d97cb416e0f30ff",
+        "approved_commit": "dbf49813a39c1a5389c5e28cb8e4c1c2379e2454"
+      }
     },
     {
       "name": "human-writing",
-      "path": "packages/human-writing"
+      "path": "packages/human-writing",
+      "claude_plugin": false,
+      "local_files": []
     },
     {
       "name": "expo",
       "path": "packages/expo",
+      "claude_plugin": false,
+      "local_files": [],
       "upstream": {
         "repository": "https://github.com/expo/skills.git",
         "path": "plugins/expo",
@@ -39,6 +43,8 @@
     {
       "name": "callstack",
       "path": "packages/callstack",
+      "claude_plugin": false,
+      "local_files": [],
       "upstream": {
         "repository": "https://github.com/callstackincubator/agent-skills.git",
         "path": ".",
@@ -50,6 +56,8 @@
     {
       "name": "ponytail",
       "path": "packages/ponytail",
+      "claude_plugin": false,
+      "local_files": [],
       "upstream": {
         "repository": "https://github.com/DietrichGebert/ponytail.git",
         "path": ".",
@@ -61,18 +69,22 @@
     {
       "name": "vercel",
       "path": "packages/vercel",
+      "claude_plugin": false,
+      "local_files": [],
+      "skill_naming": "frontmatter",
       "upstream": {
         "repository": "https://github.com/vercel-labs/agent-skills.git",
         "path": ".",
         "ref": "main",
         "approved_tree": "f94978e8351f77b2d84911fac5d3dd9d51408af9",
         "approved_commit": "063bee94c3f4df8453406c830b0a7df0f2860278"
-      },
-      "skill_naming": "frontmatter"
+      }
     },
     {
       "name": "emil",
       "path": "packages/emil",
+      "claude_plugin": false,
+      "local_files": [],
       "upstream": {
         "repository": "https://github.com/emilkowalski/skills.git",
         "path": ".",
@@ -84,6 +96,8 @@
     {
       "name": "swiftui",
       "path": "packages/swiftui",
+      "claude_plugin": false,
+      "local_files": [],
       "upstream": {
         "repository": "https://github.com/AvdLee/SwiftUI-Agent-Skill.git",
         "path": ".",
@@ -95,6 +109,7 @@
     {
       "name": "callstack-testing",
       "path": "packages/callstack-testing",
+      "claude_plugin": false,
       "local_files": [
         "LICENSE"
       ],
@@ -102,8 +117,8 @@
         "repository": "https://github.com/callstackincubator/agent-skills.git",
         "path": "plugins/vendored",
         "ref": "main",
-        "approved_commit": "59e9d17446a248b21d86f078fcd0bd2d36db1ca4",
-        "approved_tree": "1606a7bf8b3bf8711c12f1f5bba2bf7bbea443a9"
+        "approved_tree": "1606a7bf8b3bf8711c12f1f5bba2bf7bbea443a9",
+        "approved_commit": "59e9d17446a248b21d86f078fcd0bd2d36db1ca4"
       }
     }
   ],
