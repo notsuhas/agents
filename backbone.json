@@ -20,6 +20,10 @@
         "approved_commit": "1dcc2bacde73ddd284803b7af28164d0436198fc"
       },
       "provenance_file": "PROVENANCE.json"
+    },
+    {
+      "name": "human-writing",
+      "path": "packages/human-writing"
     }
   ],
   "instructions": [
