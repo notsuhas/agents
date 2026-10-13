@@ -21,7 +21,7 @@ Imported on 2026-10-14. Machines need Agent Backbone v0.7.0 or later to apply th
 - [HyperFrames](https://github.com/heygen-com/hyperframes): 21 current video and rendering skills, with references retained. Requires Node 22+; rendering needs FFmpeg.
 - [Tailscale](https://github.com/tailscale/tailscale-skill): 1 official networking skill. Machine enrollment stays local.
 - [1Password](https://github.com/1Password/1password-codex-plugin): 1 Developer Environments skill. Requires the desktop app's local MCP server and client approval.
-- [Matt Pocock](https://github.com/mattpocock/skills): 38 original skills, including seven upstream beta workflows. All use matt- names in delivery to avoid collisions; upstream files stay unchanged. The third-party curated fork is not shared.
+- [Matt Pocock](https://github.com/mattpocock/skills): 31 active original skills; seven upstream beta workflows are excluded by the shared ignore policy. All use matt- names in delivery to avoid collisions; upstream files stay unchanged. The third-party curated fork is not shared.
 
 No production skill was removed from these bundles. All upstream sources are tracked in backbone.json with source paths and approved revisions. Upstream instructions remain unchanged; host and user instructions take precedence.
 

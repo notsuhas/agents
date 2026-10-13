@@ -10,7 +10,7 @@ Checked on 2026-10-14 against the shared source, local skill folders, 25 locally
 
 The shared source now contains 211 skills in 17 packages. Argent contributes another 18 installer-owned skills. Native plugin commands, agents, hooks, and Codex Run button integration are not activated merely by copying their skill packages.
 
-The five requested additions are now shared: Fallow 4, HyperFrames 21, Tailscale 1, 1Password 1, and Matt Pocock original 38. Matt’s third-party curated fork remains provider-owned. See BUNDLE_SETUP.md for runtime requirements.
+The five requested additions are now shared: Fallow 4, HyperFrames 21, Tailscale 1, 1Password 1, and Matt Pocock original 38 (31 delivered; seven beta workflows excluded). Matt’s third-party curated fork remains provider-owned. See BUNDLE_SETUP.md for runtime requirements.
 
 ## Developer bundles still outside the shared source
 
