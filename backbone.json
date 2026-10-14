@@ -246,6 +246,44 @@
         "approved_commit": "49dd158d1076134a641b33efb035946536778336"
       },
       "skill_prefix": "matt"
+    },
+    {
+      "name": "account-workflows",
+      "path": "packages/account-workflows",
+      "claude_plugin": false,
+      "local_files": []
+    },
+    {
+      "name": "convex-expert",
+      "path": "packages/convex-expert",
+      "skill_naming": "frontmatter",
+      "local_files": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ],
+      "upstream": {
+        "repository": "https://github.com/get-convex/agent-skills.git",
+        "path": "skills/convex-expert",
+        "ref": "main",
+        "approved_tree": "83046631c27d490baec82cdd01fcb70b0b0f5dcf",
+        "approved_commit": "191a5c33a7e7a22ec9d5ff13930f84748bbcf8f8"
+      }
+    },
+    {
+      "name": "convex-reviewer",
+      "path": "packages/convex-reviewer",
+      "skill_naming": "frontmatter",
+      "local_files": [
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md"
+      ],
+      "upstream": {
+        "repository": "https://github.com/get-convex/agent-skills.git",
+        "path": "skills/convex-reviewer",
+        "ref": "main",
+        "approved_tree": "80c8d47cfd2d8c6f73e1e61d70347c9199e6d0a6",
+        "approved_commit": "191a5c33a7e7a22ec9d5ff13930f84748bbcf8f8"
+      }
     }
   ],
   "instructions": [

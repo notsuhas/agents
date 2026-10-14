@@ -8,7 +8,7 @@ Checked on 2026-10-14 against the shared source, local skill folders, 25 locally
 - Build macOS Apps: 11 official public skills, supporting files, MIT declaration retained in upstream metadata, and upstream tracking.
 - Firebase MCP: portable definition for Claude, Codex, and OpenCode using firebase-tools 15.32.1. Login and project selection are per-machine/per-project. Discovery does not prove authenticated Firebase operations.
 
-The shared source now contains 211 skills in 17 packages. Argent contributes another 18 installer-owned skills. Native plugin commands, agents, hooks, and Codex Run button integration are not activated merely by copying their skill packages.
+The shared source now contains 218 skills in 20 packages, with 211 delivered after excluding seven Matt beta workflows. Argent contributes another 18 installer-owned skills. Native plugin commands, agents, hooks, and Codex Run button integration are not activated merely by copying their skill packages. CLOUD.md records the Upsy-first exit plan and remaining exceptions.
 
 The five requested additions are now shared: Fallow 4, HyperFrames 21, Tailscale 1, 1Password 1, and Matt Pocock original 38 (31 delivered; seven beta workflows excluded). Matt’s third-party curated fork remains provider-owned. See BUNDLE_SETUP.md for runtime requirements.
 
@@ -17,12 +17,12 @@ The five requested additions are now shared: Fallow 4, HyperFrames 21, Tailscale
 | Bundle | Local skills | What is missing | Next step |
 |---|---:|---|---|
 | Vercel platform plugin | 33 | AI SDK, gateway, auth, deployments, storage, queues, and other platform guidance | Audit and import the public vercel/vercel-plugin package. This is different from the 9 shared vercel-labs/agent-skills. Preserve MCP ownership and resolve overlapping skill names. |
-| Convex | 8 | Convex setup, review, components, and backend workflows | Establish the public redistribution source and required tools. Review the opt-in transcript-feedback workflow separately. |
+| Convex | 8 | Hosted onboarding and recipes beyond the two shared standalone expert/reviewer skills | Public Apache-2.0 source is tracked for those two; served bootstrap and transcript-feedback workflows are excluded. |
 | Figma | 14 | Figma implementation and design-tool workflows | Host-specific tool dependencies need adaptation; establish redistribution terms before copying. |
 | Google Drive | 5 | Docs, Sheets, Slides, and comment workflows | Public plugin source is declared. Tools/auth need a working equivalent in each host. |
-| Sentry | 1 | Sentry investigation guidance | Public plugin source is declared. Verify each host's connector/tool support. |
-| PostHog | 1 | Product analytics guidance | Establish redistribution source and connector compatibility. |
-| Upsy use-upsy | 1 | Provider-specific usage guidance | Upsy MCP is shared already. Check the skill's license and tool assumptions before copying. |
+| Sentry | 1 | Cloud-only REST helper | Independent shared guidance uses the tested Upsy route; the helper is unnecessary for that workflow. |
+| PostHog | 1 | Native embedded widget behavior, if required | Independent shared guidance uses live Upsy skills and schemas; chart data was tested, native widget transport remains unverified. |
+| Upsy use-upsy | 1 | ChatGPT entrypoint | Independent shared router now supports local agents; keep ChatGPT's Upsy plugin for cloud access. |
 
 ## Already covered or deliberately provider-owned
 

@@ -2,10 +2,17 @@
 
 Imported on 2026-10-14. Machines need Agent Backbone v0.7.0 or later to apply the runtime policy and unified instruction links.
 
-## Shared bundles: 211 skills
+## Shared bundles: 218 source skills
+
+Seven Matt beta workflows remain excluded: 211 shared skills are delivered.
 
 - Pstack: 53. Kept intact, including HOST.md and local Claude adapter.
 - Human writing: 1. Personal shared skill.
+- Account workflows: 5 independently authored local skills for Upsy, Sentry,
+  PostHog, connected-data analysis and product-flow design. See CLOUD.md for gaps.
+- [Convex](https://github.com/get-convex/agent-skills): 2 licensed, upstream-tracked
+  standalone skills: convex-expert and convex-reviewer. Hosted scaffold recipes
+  and transcript feedback are excluded; deployment remains authorization-bound.
 - [Expo](https://github.com/expo/skills): 24 production skills, including EAS, UI, animation, routing, modules, and feedback. Full folders, references, scripts, agents, and assets retained. Importing the skills does not activate Expo's plugin hooks or install its MCP. Telemetry stays opt-in.
 - [Callstack](https://github.com/callstackincubator/agent-skills): 9 maintained React Native skills plus 3 skills vendored by its testing bundle: agent-device, dogfood, and react-native-testing. Preserve the testing bundle's source lockfile when updating it. In T3 use its native device panel and supplied launcher for device work.
 - [Ponytail](https://github.com/DietrichGebert/ponytail): all 6 standard skills. No optional hooks were activated. It overlaps with Pstack's simplicity guidance; invoke the style modes deliberately.

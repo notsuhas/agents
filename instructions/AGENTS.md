@@ -115,6 +115,14 @@ provide a simple yield when no stronger timing guarantee is needed.
 
 ## Tooling and shared ownership
 
+Use Upsy first for connected accounts and external integrations. Discover its
+actual tools and schemas before claiming a capability is missing. Local skills,
+instructions and helpers belong in Backbone. Use a native cloud plugin only for
+a required capability unavailable through Upsy or the local workflow; name that
+gap. Tool-count differences alone are not a reason to retain a plugin. A local
+skill cannot supply account access or run in ChatGPT without a local filesystem.
+Do not route around denied permissions through another connector or browser.
+
 Use the active harness's browser/device workflow. Never start a second Arc
 instance with `--user-data-dir` or reuse its real profile for standalone
 Chromium automation. Do not assume forked Chromium profiles are isolated.
@@ -137,3 +145,7 @@ corresponding enabled `matt-` skill. Beta workflows are excluded from delivery.
 
 Package installers must not overwrite Backbone-managed global instructions or
 skill links. Inspect project installer plans before adding hooks or task maps.
+
+Convex skills' deployment verification runs only within authorized deployment
+scope. Do not create an anonymous deployment or rebind credentials to satisfy
+verification; a read-only review does not authorize a push.
