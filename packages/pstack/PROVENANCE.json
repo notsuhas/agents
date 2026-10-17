@@ -1,8 +1,8 @@
 {
   "repository": "https://github.com/cursor/plugins.git",
-  "commit": "dbf49813a39c1a5389c5e28cb8e4c1c2379e2454",
-  "version": "0.15.23",
+  "commit": "101b274dd991f694e1f7024be2157e5f3adf07de",
+  "version": "0.15.25",
   "license": "MIT",
   "note": "Claude registration and HOST.md are portability adapters; upstream skill content is preserved.",
-  "upstream_tree": "fafe54a3bb94d4e5e6eee5070d97cb416e0f30ff"
+  "upstream_tree": "54ac5265638c4455ec3d04d496a379b5afc6aac2"
 }
