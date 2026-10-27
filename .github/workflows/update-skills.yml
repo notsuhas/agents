@@ -41,6 +41,7 @@ jobs:
           printf '%s\n' '.update-summary.md' >> .git/info/exclude
           .backbone-tool/bin/agent-backbone upstream update --all --repository .
           .backbone-tool/bin/agent-backbone validate --repository .
+          python3 scripts/test-security-boundaries.py
           node scripts/update-runtimes.mjs
           node scripts/update-summary.mjs
       - name: Open or refresh update PR

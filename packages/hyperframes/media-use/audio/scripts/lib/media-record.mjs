@@ -1,5 +1,5 @@
-import { existsSync } from "node:fs";
-import { extname, join } from "node:path";
+import { existsSync, lstatSync } from "node:fs";
+import { extname, join, resolve, sep } from "node:path";
 import { AGENT_SOURCES, latestRecordFor, recordInPlace } from "../../../scripts/lib/manifest.mjs";
 import { regenerateIndex } from "../../../scripts/lib/index-gen.mjs";
 
@@ -31,14 +31,32 @@ export function agentWritePath(
   return path;
 }
 
+function assertVoicePath(hyperframesDir, rel) {
+  const root = resolve(hyperframesDir, "assets/voice");
+  if (!resolve(hyperframesDir, rel).startsWith(root + sep)) throw new Error("Unsafe voice output path");
+  for (const part of ["assets", "assets/voice", rel]) {
+    let entry;
+    try {
+      entry = lstatSync(join(hyperframesDir, part));
+    } catch (error) {
+      if (error.code === "ENOENT") return;
+      throw error;
+    }
+    if (entry.isSymbolicLink() || (part !== rel && !entry.isDirectory())) throw new Error("Unsafe voice output path");
+  }
+}
+
 /** Each spoken line's file, picked before lines synthesize concurrently so two never land on one free name. */
 export function voicePaths(hyperframesDir, lines, anomalies) {
   const taken = new Set();
   const paths = new Map();
   for (const line of lines.filter((l) => String(l.text ?? "").trim())) {
-    const rel = agentWritePath(hyperframesDir, `assets/voice/${line.id}.wav`, { anomalies, taken });
+    const id = String(line.id ?? "");
+    if (!/^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$/.test(id) || paths.has(id)) throw new Error("Invalid or duplicate voice line id");
+    const rel = agentWritePath(hyperframesDir, `assets/voice/${id}.wav`, { anomalies, taken });
+    assertVoicePath(hyperframesDir, rel);
     taken.add(rel);
-    paths.set(String(line.id), rel);
+    paths.set(id, rel);
   }
   return paths;
 }
