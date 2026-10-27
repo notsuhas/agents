@@ -8,7 +8,7 @@ Checked on 2026-10-14 against the shared source, local skill folders, 25 locally
 - Build macOS Apps: 11 official public skills, supporting files, MIT declaration retained in upstream metadata, and upstream tracking.
 - Firebase MCP: portable definition for Claude, Codex, and OpenCode using firebase-tools 15.32.1. Login and project selection are per-machine/per-project. Discovery does not prove authenticated Firebase operations.
 
-The shared source now contains 218 skills in 20 packages, with 211 delivered after excluding seven Matt beta workflows. Argent contributes another 18 installer-owned skills. Native plugin commands, agents, hooks, and Codex Run button integration are not activated merely by copying their skill packages. CLOUD.md records the Upsy-first exit plan and remaining exceptions.
+The shared source now contains 227 skills in 21 packages, with 220 delivered after excluding seven Matt beta workflows. Argent contributes another 18 installer-owned skills. Native plugin commands, agents, hooks, and Codex Run button integration are not activated merely by copying their skill packages. CLOUD.md records the Upsy-first exit plan and remaining exceptions.
 
 The five requested additions are now shared: Fallow 4, HyperFrames 21, Tailscale 1, 1Password 1, and Matt Pocock original 38 (31 delivered; seven beta workflows excluded). Matt’s third-party curated fork remains provider-owned. See BUNDLE_SETUP.md for runtime requirements.
 

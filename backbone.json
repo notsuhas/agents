@@ -284,6 +284,19 @@
         "approved_tree": "80c8d47cfd2d8c6f73e1e61d70347c9199e6d0a6",
         "approved_commit": "191a5c33a7e7a22ec9d5ff13930f84748bbcf8f8"
       }
+    },
+    {
+      "name": "tstack",
+      "path": "packages/tstack",
+      "claude_plugin": false,
+      "local_files": [],
+      "upstream": {
+        "repository": "https://github.com/t3dotgg/tstack.git",
+        "path": ".",
+        "ref": "main",
+        "approved_tree": "b21c1537d0586c5bdb5e046e733953ef7b9cbb4f",
+        "approved_commit": "92e38e2cf677a84a142e8df296861c588542135c"
+      }
     }
   ],
   "instructions": [

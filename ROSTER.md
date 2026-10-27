@@ -2,12 +2,17 @@
 
 Imported on 2026-10-14. Machines need Agent Backbone v0.7.0 or later to apply the runtime policy and unified instruction links.
 
-## Shared bundles: 218 source skills
+## Shared bundles: 227 source skills
 
-Seven Matt beta workflows remain excluded: 211 shared skills are delivered.
+Seven Matt beta workflows remain excluded: 220 shared skills are delivered.
 
 - Pstack: 53. Kept intact, including HOST.md and local Claude adapter.
 - Human writing: 1. Personal shared skill.
+- [Theo Browne's tstack](https://github.com/t3dotgg/tstack): all 9 MIT-licensed
+  skills, original names and sibling dependencies preserved. Includes the
+  non-T3 PR watcher script; T3 uses its native watcher instead. Cross-provider
+  reviews require those models in the active harness. Invoke full-stop to leave
+  merging to the user, or explicitly full-send for its unattended merge workflow.
 - Account workflows: 5 independently authored local skills for Upsy, Sentry,
   PostHog, connected-data analysis and product-flow design. See CLOUD.md for gaps.
 - [Convex](https://github.com/get-convex/agent-skills): 2 licensed, upstream-tracked
