@@ -2,6 +2,8 @@
 
 Backbone shares these skill folders with Claude, Codex, and OpenCode. It does not enroll accounts or install project hooks from their upstream installers.
 
+For new Macs with Apple simulators, follow [Simslim setup](SIMSLIM.md) to install the CLI and enable automatic slimming. This host setup runs separately from skill sync.
+
 | Bundle | Setup | Ownership |
 |---|---|---|
 | Fallow | Run `npx fallow --help`; install a project dev dependency when using its analysis. | Do not run `fallow agent install` against Backbone-managed global skills or instructions. Inspect its dry-run before adding project hooks or task maps. |
