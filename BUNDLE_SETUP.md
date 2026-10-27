@@ -6,6 +6,7 @@ For new Macs with Apple simulators, follow [Simslim setup](SIMSLIM.md) to instal
 
 | Bundle | Setup | Ownership |
 |---|---|---|
+| Cloudflare Security Audit | Invoke `security-audit` against a repository. Node.js runs its bundled validators. Full audits require independent subagents; target execution requires every OS sandbox control listed in the skill. | Skill sync does not provision a sandbox. Missing controls leave execution-dependent findings as `needs_validation`; they do not justify running target code unsandboxed. Reports stay outside the target repository by default. |
 | Fallow | Run `npx fallow --help`; install a project dev dependency when using its analysis. | Do not run `fallow agent install` against Backbone-managed global skills or instructions. Inspect its dry-run before adding project hooks or task maps. |
 | HyperFrames | Node 22+ and `npx hyperframes --help`. Install FFmpeg for rendering, for example `brew install ffmpeg` on macOS. | Keep Backbone-owned skills under Backbone control; do not overwrite them with a CLI skill installer. Cloud rendering, media accounts, and deployment credentials are separate. |
 | Tailscale | Install Tailscale and sign this machine into your tailnet. | Existing enrollment is retained. Shared guidance does not share node identity or permissions. |

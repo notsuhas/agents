@@ -307,6 +307,19 @@
         "approved_tree": "b21c1537d0586c5bdb5e046e733953ef7b9cbb4f",
         "approved_commit": "92e38e2cf677a84a142e8df296861c588542135c"
       }
+    },
+    {
+      "name": "cloudflare-security-audit",
+      "path": "packages/cloudflare-security-audit",
+      "claude_plugin": false,
+      "local_files": [],
+      "upstream": {
+        "repository": "https://github.com/cloudflare/security-audit-skill.git",
+        "path": ".",
+        "ref": "main",
+        "approved_tree": "8cd03bb3941496e441d6248aaae2429a35b93cc3",
+        "approved_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8"
+      }
     }
   ],
   "instructions": [
