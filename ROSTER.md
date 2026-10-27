@@ -2,11 +2,12 @@
 
 Imported on 2026-10-14. Machines need Agent Backbone v0.7.0 or later to apply the runtime policy and unified instruction links.
 
-## Shared bundles: 227 source skills
+## Shared bundles: 231 source skills
 
-Seven Matt beta workflows remain excluded: 220 shared skills are delivered.
+Seven Matt beta workflows remain excluded: 224 shared skills are delivered.
 
-- Pstack: 53. Kept intact, including HOST.md and local Claude adapter.
+- Pstack: 56. Kept intact, including HOST.md and local Claude adapter.
+- [Cloudflare Security Audit](https://github.com/cloudflare/security-audit-skill): 1 MIT-licensed skill, `security-audit`, with all companion guides, schema and validators. Tracked by the daily updater. Node.js is required for validators; full audits need independent subagents and OS-enforced sandbox controls before executing target code. See BUNDLE_SETUP.md.
 - Human writing: 1. Personal shared skill.
 - [Theo Browne's tstack](https://github.com/t3dotgg/tstack): all 9 MIT-licensed
   skills, original names and sibling dependencies preserved. Includes the
