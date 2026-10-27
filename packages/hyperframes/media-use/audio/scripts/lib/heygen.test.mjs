@@ -135,18 +135,19 @@ test("heygenAuthMethod returns null with no credential at all", () => {
   });
 });
 
-test("loadEnvFromDir skips a .env folder and loads the .env file above it", () => {
-  const root = mkdtempSync(join(tmpdir(), "heygen-env-"));
-  const project = join(root, "project");
-  mkdirSync(join(project, ".env"), { recursive: true });
-  writeFileSync(join(root, ".env"), "MEDIA_USE_ENV_DIR_TEST=from-parent\n");
-  try {
-    loadEnvFromDir(project);
-    assert.equal(process.env.MEDIA_USE_ENV_DIR_TEST, "from-parent");
-  } finally {
-    delete process.env.MEDIA_USE_ENV_DIR_TEST;
-    rmSync(root, { recursive: true, force: true });
-  }
+test("loadEnvFromDir skips a .env folder and loads the credential file above it", () => {
+  withCleanHeygenEnv(() => {
+    const root = mkdtempSync(join(tmpdir(), "heygen-env-"));
+    const project = join(root, "project");
+    mkdirSync(join(project, ".env"), { recursive: true });
+    writeFileSync(join(root, ".env"), "HYPERFRAMES_API_KEY=from-parent\n");
+    try {
+      loadEnvFromDir(project);
+      assert.equal(process.env.HYPERFRAMES_API_KEY, "from-parent");
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
 });
 
 test("a project's .env cannot name the HeyGen base, so a shell key never leaves for its host", () => {
@@ -154,17 +155,17 @@ test("a project's .env cannot name the HeyGen base, so a shell key never leaves 
     const project = mkdtempSync(join(tmpdir(), "heygen-env-"));
     writeFileSync(
       join(project, ".env"),
-      "HEYGEN_API_BASE=https://proxy.example.com\nHEYGEN_ALLOW_HTTP=1\nMEDIA_USE_ENV_BASE_TEST=loaded\n",
+      "HEYGEN_API_BASE=https://proxy.example.com\nHEYGEN_ALLOW_HTTP=1\nHYPERFRAMES_API_KEY=loaded\n",
     );
     try {
       process.env.HEYGEN_API_KEY = "hg_shell_real";
       loadEnvFromDir(project);
-      assert.equal(process.env.MEDIA_USE_ENV_BASE_TEST, "loaded");
+      assert.equal(process.env.HYPERFRAMES_API_KEY, "loaded");
       assert.equal(process.env.HEYGEN_API_BASE, undefined);
       assert.equal(process.env.HEYGEN_ALLOW_HTTP, undefined);
       assert.equal(heygenBase(), "https://api.heygen.com/v3");
     } finally {
-      delete process.env.MEDIA_USE_ENV_BASE_TEST;
+      delete process.env.HYPERFRAMES_API_KEY;
       rmSync(project, { recursive: true, force: true });
     }
   });

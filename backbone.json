@@ -194,7 +194,11 @@
       "claude_plugin": false,
       "local_files": [
         "PROVENANCE.json",
-        "LICENSE"
+        "LICENSE",
+        "PATCHES.md",
+        "media-use/audio/scripts/lib/heygen.mjs",
+        "media-use/audio/scripts/lib/heygen.test.mjs",
+        "media-use/audio/scripts/lib/media-record.mjs"
       ],
       "provenance_file": "PROVENANCE.json",
       "upstream": {

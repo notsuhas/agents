@@ -2,5 +2,10 @@
   "repository": "https://github.com/heygen-com/hyperframes.git",
   "commit": "cea0bad7931122bd93680006978c0d9007daa3d4",
   "upstream_tree": "e08b97448f7c672ea6d5606e6996170a58513b61",
-  "note": "Full selected upstream directory and license retained. Skill aliases are managed by Backbone; CLI installs, account enrollment, and optional hooks are separate."
+  "note": "Full selected upstream directory and license retained. Skill aliases are managed by Backbone; CLI installs, account enrollment, and optional hooks are separate.",
+  "local_backports": {
+    "description": "Project environment and voice-output input boundaries",
+    "documentation": "PATCHES.md",
+    "base_commit": "cea0bad7931122bd93680006978c0d9007daa3d4"
+  }
 }

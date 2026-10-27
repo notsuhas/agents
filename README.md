@@ -38,3 +38,7 @@ See [AUDIT.md](AUDIT.md) for shared-versus-local coverage and outstanding gaps, 
 See [CLOUD.md](CLOUD.md) for the Upsy-first route and remaining cloud-only gaps.
 The locally maintained account-workflows package provides portable Upsy, Sentry
 and PostHog guidance without requiring their ChatGPT skill bundles.
+
+The [expense-sync helper](scripts/expense-sync/README.md) records and verifies
+expenses across Settle Up, Money Lover and Nomad through an authenticated Upsy
+host. Account profiles and receipt files stay local, outside this repository.
