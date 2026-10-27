@@ -17,8 +17,8 @@
         "repository": "https://github.com/cursor/plugins.git",
         "path": "pstack",
         "ref": "main",
-        "approved_tree": "fafe54a3bb94d4e5e6eee5070d97cb416e0f30ff",
-        "approved_commit": "dbf49813a39c1a5389c5e28cb8e4c1c2379e2454"
+        "approved_tree": "06803099e18ed488c8c2a2fda118ce772b4e2a77",
+        "approved_commit": "d457567332aa6989e753ea289f30ea2bfbc80bc0"
       }
     },
     {
@@ -36,8 +36,8 @@
         "repository": "https://github.com/expo/skills.git",
         "path": "plugins/expo",
         "ref": "main",
-        "approved_tree": "9738f5efe58d25149253021a1301c918ec2c0b83",
-        "approved_commit": "d4f484024fec15196bfd3c272e953e3f983972cf"
+        "approved_tree": "ea9ac1bf7cef917e9f3491189767f53812ea805d",
+        "approved_commit": "7ddc1f5796996e5c7efe2fc3fa9168eb24e8dac1"
       }
     },
     {
@@ -62,8 +62,8 @@
         "repository": "https://github.com/DietrichGebert/ponytail.git",
         "path": ".",
         "ref": "main",
-        "approved_tree": "ce7bdb1a8ff7666d8040f34a673598b823fc32ef",
-        "approved_commit": "2961b52fc1fe6a5a87c7a959a79512e5c2f3ffe5"
+        "approved_tree": "d9b8df03066ea55bb9dea5df3a39000e42478847",
+        "approved_commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710"
       }
     },
     {
@@ -124,23 +124,25 @@
     {
       "name": "rea",
       "path": "packages/rea",
-      "skill_naming": "frontmatter",
+      "claude_plugin": false,
       "local_files": [
         "LICENSE",
         "PROVENANCE.json"
       ],
       "provenance_file": "PROVENANCE.json",
+      "skill_naming": "frontmatter",
       "upstream": {
         "repository": "https://github.com/morluto/rea.git",
         "path": ".agents/skills/reverse-engineer-anything",
         "ref": "main",
-        "approved_tree": "ee926743631c43d6cf2c240c3eec2fe6e16942af",
-        "approved_commit": "9630c8ff46533fe63ec0e06212d01545070d17f0"
+        "approved_tree": "e94258780a1f23e18de3e01f467c0aa8d849c789",
+        "approved_commit": "048d70755ea9ca1d0d159ac78285d62a7ae00b21"
       }
     },
     {
       "name": "firebase",
       "path": "packages/firebase",
+      "claude_plugin": false,
       "local_files": [
         "PROVENANCE.json"
       ],
@@ -149,13 +151,14 @@
         "repository": "https://github.com/firebase/agent-skills.git",
         "path": ".",
         "ref": "main",
-        "approved_tree": "f45154b671392a89eab02e9d8a1451a6c088c1bc",
-        "approved_commit": "b5735e5baa0d874cb97a23e26ebe93e4501797b9"
+        "approved_tree": "af2eb4bf8f17a6099121764722e17064af77bd61",
+        "approved_commit": "306cc1844c47839bd4f2c7dba7cc3c394e4f3e0b"
       }
     },
     {
       "name": "build-macos-apps",
       "path": "packages/build-macos-apps",
+      "claude_plugin": false,
       "local_files": [
         "PROVENANCE.json"
       ],
@@ -171,6 +174,7 @@
     {
       "name": "fallow",
       "path": "packages/fallow",
+      "claude_plugin": false,
       "local_files": [
         "PROVENANCE.json",
         "LICENSE"
@@ -180,13 +184,14 @@
         "repository": "https://github.com/fallow-rs/fallow-skills.git",
         "path": "fallow",
         "ref": "main",
-        "approved_tree": "d327e428dfec12a1c95b66d297146340ece62cd9",
-        "approved_commit": "5d0fd7cf37cedd0c8b18df5c7b0cabd68b462708"
+        "approved_tree": "5ca40342214090c3651a0a0b70c4ad3b0458c63b",
+        "approved_commit": "4b0c7fbe931d8c45c2c1419def6da5e3080d11c2"
       }
     },
     {
       "name": "hyperframes",
       "path": "packages/hyperframes",
+      "claude_plugin": false,
       "local_files": [
         "PROVENANCE.json",
         "LICENSE"
@@ -196,13 +201,14 @@
         "repository": "https://github.com/heygen-com/hyperframes.git",
         "path": "skills",
         "ref": "main",
-        "approved_tree": "a2b19b70f209d512348a60349776e8a6ce823ab7",
-        "approved_commit": "bf4cf860fbd26a7d51938c5f11987c335d4e848a"
+        "approved_tree": "e08b97448f7c672ea6d5606e6996170a58513b61",
+        "approved_commit": "cea0bad7931122bd93680006978c0d9007daa3d4"
       }
     },
     {
       "name": "tailscale",
       "path": "packages/tailscale",
+      "claude_plugin": false,
       "local_files": [
         "PROVENANCE.json"
       ],
@@ -218,6 +224,7 @@
     {
       "name": "1password",
       "path": "packages/1password",
+      "claude_plugin": false,
       "local_files": [
         "PROVENANCE.json",
         "LICENSE"
@@ -234,18 +241,19 @@
     {
       "name": "matt",
       "path": "packages/matt",
+      "claude_plugin": false,
       "local_files": [
         "PROVENANCE.json"
       ],
       "provenance_file": "PROVENANCE.json",
+      "skill_prefix": "matt",
       "upstream": {
         "repository": "https://github.com/mattpocock/skills.git",
         "path": ".",
         "ref": "main",
         "approved_tree": "3ce485319972aae46dec0c2ac34cf4a7f28f7414",
         "approved_commit": "49dd158d1076134a641b33efb035946536778336"
-      },
-      "skill_prefix": "matt"
+      }
     },
     {
       "name": "account-workflows",
@@ -256,11 +264,12 @@
     {
       "name": "convex-expert",
       "path": "packages/convex-expert",
-      "skill_naming": "frontmatter",
+      "claude_plugin": false,
       "local_files": [
         "LICENSE",
         "THIRD_PARTY_NOTICES.md"
       ],
+      "skill_naming": "frontmatter",
       "upstream": {
         "repository": "https://github.com/get-convex/agent-skills.git",
         "path": "skills/convex-expert",
@@ -272,11 +281,12 @@
     {
       "name": "convex-reviewer",
       "path": "packages/convex-reviewer",
-      "skill_naming": "frontmatter",
+      "claude_plugin": false,
       "local_files": [
         "LICENSE",
         "THIRD_PARTY_NOTICES.md"
       ],
+      "skill_naming": "frontmatter",
       "upstream": {
         "repository": "https://github.com/get-convex/agent-skills.git",
         "path": "skills/convex-reviewer",
