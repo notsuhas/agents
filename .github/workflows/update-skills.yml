@@ -30,6 +30,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Patch updater frontmatter parsing
+        run: node scripts/apply-agent-backbone-patches.mjs .backbone-tool
       - name: Build updater
         working-directory: .backbone-tool
         run: |
@@ -41,15 +43,18 @@ jobs:
           printf '%s\n' '.update-summary.md' >> .git/info/exclude
           .backbone-tool/bin/agent-backbone upstream update --all --repository .
           .backbone-tool/bin/agent-backbone validate --repository .
+          node --test tests/skill-frontmatter.test.mjs
           python3 scripts/test-security-boundaries.py
           node scripts/update-runtimes.mjs
           node scripts/update-summary.mjs
       - name: Open or refresh update PR
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: automation/upstream-skills
           delete-branch: true
-          sign-commits: true
+          # sign-commits uses the GitHub API tree builder, which fails on file→symlink
+          # type changes (e.g. packages/matt/AGENTS.md) with "Cannot destructure property 'path'".
+          sign-commits: false
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           commit-message: 'chore(agents): update skills and runtime versions'
           title: 'chore(agents): update skills and runtime versions'
