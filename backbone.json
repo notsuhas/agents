@@ -17,8 +17,8 @@
         "repository": "https://github.com/cursor/plugins.git",
         "path": "pstack",
         "ref": "main",
-        "approved_tree": "06803099e18ed488c8c2a2fda118ce772b4e2a77",
-        "approved_commit": "d457567332aa6989e753ea289f30ea2bfbc80bc0"
+        "approved_tree": "4719e1c4b4c43bac85d4206a8b41dd2899769c1c",
+        "approved_commit": "6b0300214a09fd6029cfb7077043125758cd1fd2"
       }
     },
     {
@@ -36,8 +36,8 @@
         "repository": "https://github.com/expo/skills.git",
         "path": "plugins/expo",
         "ref": "main",
-        "approved_tree": "ea9ac1bf7cef917e9f3491189767f53812ea805d",
-        "approved_commit": "7ddc1f5796996e5c7efe2fc3fa9168eb24e8dac1"
+        "approved_tree": "2418dcf1958dd84e6590438cbc92f845f1680518",
+        "approved_commit": "a9e5bd3fa00b4e61f632e43f85da73aee1942582"
       }
     },
     {
@@ -62,8 +62,8 @@
         "repository": "https://github.com/DietrichGebert/ponytail.git",
         "path": ".",
         "ref": "main",
-        "approved_tree": "d9b8df03066ea55bb9dea5df3a39000e42478847",
-        "approved_commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710"
+        "approved_tree": "6bdee088de8ae2cfa05468b30291baa6f5faa62c",
+        "approved_commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
       }
     },
     {
@@ -76,8 +76,8 @@
         "repository": "https://github.com/vercel-labs/agent-skills.git",
         "path": ".",
         "ref": "main",
-        "approved_tree": "f94978e8351f77b2d84911fac5d3dd9d51408af9",
-        "approved_commit": "063bee94c3f4df8453406c830b0a7df0f2860278"
+        "approved_tree": "339e66e210e08989967e7d992ce3906313165f77",
+        "approved_commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62"
       }
     },
     {
@@ -89,8 +89,8 @@
         "repository": "https://github.com/emilkowalski/skills.git",
         "path": ".",
         "ref": "main",
-        "approved_tree": "a8f01f03c19a9ec7e737494dff7b8e416e326bd2",
-        "approved_commit": "2d228630ba1446365f614a108cb8252f1feda202"
+        "approved_tree": "d3696e76b48f22a3d9bbd223c5582c6207e56f55",
+        "approved_commit": "c8a79627b59d72d764d6ab6f2c87c09a48169833"
       }
     },
     {
@@ -102,8 +102,8 @@
         "repository": "https://github.com/AvdLee/SwiftUI-Agent-Skill.git",
         "path": ".",
         "ref": "main",
-        "approved_tree": "fdc2229ba96b2883d0967f9d39367511c3d078c4",
-        "approved_commit": "204dba7c67256a8b707ee3fbc5759a824191974f"
+        "approved_tree": "9c87cfd9e97f3a8cccabbccfd6e267336870f2fe",
+        "approved_commit": "62bd760f005093d1e2e4de5db156e456a5f96400"
       }
     },
     {
@@ -135,8 +135,8 @@
         "repository": "https://github.com/morluto/rea.git",
         "path": ".agents/skills/reverse-engineer-anything",
         "ref": "main",
-        "approved_tree": "e94258780a1f23e18de3e01f467c0aa8d849c789",
-        "approved_commit": "048d70755ea9ca1d0d159ac78285d62a7ae00b21"
+        "approved_tree": "51069c73f6771252eafa325780c5fb0e7b1a8e31",
+        "approved_commit": "c5301e6145a9c8e06719f27e83da55af8e5480fc"
       }
     },
     {
@@ -151,8 +151,8 @@
         "repository": "https://github.com/firebase/agent-skills.git",
         "path": ".",
         "ref": "main",
-        "approved_tree": "af2eb4bf8f17a6099121764722e17064af77bd61",
-        "approved_commit": "306cc1844c47839bd4f2c7dba7cc3c394e4f3e0b"
+        "approved_tree": "6ef1ac56ef8c73dbb2e2da5a38e46efcae0f7e69",
+        "approved_commit": "b76be96aaf5f152a5fb3112dde85c723c45539e7"
       }
     },
     {
@@ -184,8 +184,8 @@
         "repository": "https://github.com/fallow-rs/fallow-skills.git",
         "path": "fallow",
         "ref": "main",
-        "approved_tree": "5ca40342214090c3651a0a0b70c4ad3b0458c63b",
-        "approved_commit": "4b0c7fbe931d8c45c2c1419def6da5e3080d11c2"
+        "approved_tree": "d08d51d5789810c117aa5d6ccb13275d159f2fd4",
+        "approved_commit": "2d633a27f00d18db701534207908866d28bddccb"
       }
     },
     {
@@ -205,8 +205,8 @@
         "repository": "https://github.com/heygen-com/hyperframes.git",
         "path": "skills",
         "ref": "main",
-        "approved_tree": "e08b97448f7c672ea6d5606e6996170a58513b61",
-        "approved_commit": "cea0bad7931122bd93680006978c0d9007daa3d4"
+        "approved_tree": "4bea3b1bf446b290c29d35d4e63884a206126dfe",
+        "approved_commit": "555c788a333c592e9878139db318ea52f1315cec"
       }
     },
     {
@@ -238,8 +238,8 @@
         "repository": "https://github.com/1Password/1password-codex-plugin.git",
         "path": "plugins/1password",
         "ref": "main",
-        "approved_tree": "54474a80cd92b27242be9c2dec29b6644ee53158",
-        "approved_commit": "7312d488d76b0df22e98e8947b6040f481138e44"
+        "approved_tree": "7f8d98182e48498cf1ad8e76c8e069069ee7e2ff",
+        "approved_commit": "16e409d9e33255f1374ff782ecd4f03dd9dc4654"
       }
     },
     {
@@ -255,8 +255,8 @@
         "repository": "https://github.com/mattpocock/skills.git",
         "path": ".",
         "ref": "main",
-        "approved_tree": "3ce485319972aae46dec0c2ac34cf4a7f28f7414",
-        "approved_commit": "49dd158d1076134a641b33efb035946536778336"
+        "approved_tree": "a73b182b5f22565e829e0969eb0bfd284508a7b8",
+        "approved_commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d"
       }
     },
     {
@@ -308,8 +308,8 @@
         "repository": "https://github.com/t3dotgg/tstack.git",
         "path": ".",
         "ref": "main",
-        "approved_tree": "b21c1537d0586c5bdb5e046e733953ef7b9cbb4f",
-        "approved_commit": "92e38e2cf677a84a142e8df296861c588542135c"
+        "approved_tree": "a939d866f545629c277cc9fdf766051385f3e9d9",
+        "approved_commit": "1085050f3baed1ac724caa4a8166145fb2ac88af"
       }
     },
     {

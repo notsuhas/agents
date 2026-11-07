@@ -19,7 +19,15 @@ and Linux):
 }
 ```
 
-The MCP server requires the 1Password desktop app with the MCP server enabled under Settings > Developer. On business accounts, an administrator must first enable the feature in the "Sharing & Permissions" policies section of the admin dashboard. Each client connection and environment access can require approval in the desktop app.
+The MCP server requires the 1Password desktop app with **Integrate with MCP clients**
+turned on under **Settings > Developer**. If the checkbox is disabled by an
+administrator, ask your administrator to check **Policies > Sharing and permissions > Agentic permissions > Local MCP server**.
+Each client connection and environment access can require approval in the desktop app.
+
+On macOS 27 Golden Gate, also allow the app you run Codex in to access 1Password
+app data: open **System Settings** > **Privacy & Security** > **Files & Folders**,
+select the app, and turn on the setting that starts with **"Data shared by 1Password"**.
+Then quit and reopen the app.
 
 ## Exposed Tools
 
@@ -27,8 +35,8 @@ The MCP server requires the 1Password desktop app with the MCP server enabled un
 - `list_environments`
 - `create_environment`
 - `rename_environment`
-- `list_variables`
-- `append_variables`
+- `list_secrets`
+- `append_secrets`
 - `create_local_env_file`
 - `list_local_env_files`
 
