@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/morluto/rea.git",
-  "commit": "048d70755ea9ca1d0d159ac78285d62a7ae00b21",
-  "upstream_tree": "e94258780a1f23e18de3e01f467c0aa8d849c789",
+  "commit": "c5301e6145a9c8e06719f27e83da55af8e5480fc",
+  "upstream_tree": "51069c73f6771252eafa325780c5fb0e7b1a8e31",
   "license": "MIT",
   "note": "Shared instructions track upstream. REA CLI and optional analysis engines are installed separately; consult actual connected tool schemas."
 }

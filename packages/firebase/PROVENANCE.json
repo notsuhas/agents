@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/firebase/agent-skills.git",
-  "commit": "306cc1844c47839bd4f2c7dba7cc3c394e4f3e0b",
-  "upstream_tree": "af2eb4bf8f17a6099121764722e17064af77bd61",
+  "commit": "b76be96aaf5f152a5fb3112dde85c723c45539e7",
+  "upstream_tree": "6ef1ac56ef8c73dbb2e2da5a38e46efcae0f7e69",
   "license": "Apache-2.0",
   "license_declaration": "LICENSE",
   "note": "Full upstream package retained. Native plugin registration, commands, hooks, and Codex UI metadata are not activated by shared skill delivery."
